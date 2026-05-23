@@ -9,9 +9,10 @@
 
 [original.mp4](./video/original.mp4)は、加工されていないオリジナルのボカロ曲「散り散り」の映像です(ただし、ダウンロードする過程で画質は変化しているみたいです)。
 
-# Usage
-## 説明
+# 説明
 [database.db](./database.db)のcharactersテーブルに登場するキャラクターのデータが含まれています。
+
+opencvでパターンマッチングした過程の動画ファイルが[OpenCV_processing_process.mp4](./video/OpenCV_processing_process.mp4)です。
 
 ```
 sqlite> SELECT * FROM characters;
@@ -24,6 +25,11 @@ sqlite> SELECT * FROM characters;
 ```
 
 そして、どのフレームでどのSQLを実行すれば、オリジナルの結果と一致するかは[SQL.yaml](./SQL.yaml)に記述されています。
+
+これらのSQLをターミナル画像にして、動画にまとめ、音楽と合成したのが、[SQL.mp4](./video/SQL.mp4)です。
+
+
+# Usage
 
 ## make_SQL_yaml_by_video.py
 
