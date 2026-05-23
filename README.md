@@ -40,4 +40,8 @@ python make_SQL_yaml_by_video.py
 
 実行には、ffmpegが必要です。
 
-
+## make_SQL_video.py
+各フレームのSQL文が書かれた[SQL.yaml](./SQL.yaml)から、SQLをターミナル画像にして、動画にまとめ、音楽と合成した[SQL.mp4](./video/SQL.mp4)を出力します。
+```
+python make_SQL_yaml_by_video.py
+```
