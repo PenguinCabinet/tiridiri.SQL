@@ -12,8 +12,6 @@
 # 説明
 [database.db](./database.db)のcharactersテーブルに登場するキャラクターのデータが含まれています。
 
-opencvでパターンマッチングした過程の動画ファイルが[OpenCV_processing_process.mp4](./video/OpenCV_processing_process.mp4)です。
-
 ```
 sqlite> SELECT * FROM characters;
 ╭─────────┬──────────╮
@@ -23,6 +21,8 @@ sqlite> SELECT * FROM characters;
 │ teacher │ portrait │
 ╰─────────┴──────────╯
 ```
+
+opencvでパターンマッチングした過程の動画ファイルが[OpenCV_processing_process.mp4](./video/OpenCV_processing_process.mp4)です。
 
 そして、どのフレームでどのSQLを実行すれば、オリジナルの結果と一致するかは[SQL.yaml](./SQL.yaml)に記述されています。
 
