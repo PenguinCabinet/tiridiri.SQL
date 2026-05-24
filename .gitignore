@@ -222,3 +222,4 @@ __marimo__/
 *.exe 
 
 /video/*_temp*
+/temp.png

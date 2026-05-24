@@ -22,42 +22,48 @@ SQL_video_writer = cv2.VideoWriter(
     )
 )
 
+previous_SQL=""
+
 for frame_i,elem in enumerate(SQL["body"]):
     if frame_i%100==0:
         print(frame_i)
-    SQL_run_output = subprocess.run([
-        "sqlite3",
-        "database.db",
-        "\"{}\"".format(elem["SQL"])
-    ], 
-    shell=True, capture_output=True, text=True,
-    encoding='cp932',
-    timeout=10).stdout
 
-    silicon_cmd = [
-        "silicon",
-        "--language", "sql",
-        "--output","./temp.png"
-    ]
-    output_text="> {}\n{}".format(
-        elem["SQL"],
-        SQL_run_output,
-    )
+    if previous_SQL!=elem["SQL"]:
+        SQL_run_output = subprocess.run([
+            "sqlite3",
+            "database.db",
+            "-header", "-column",
+            elem["SQL"].replace("\n","")
+        ], 
+        shell=True, capture_output=True, text=True,
+        encoding='cp932',
+        timeout=10).stdout
 
-    silicon_res = subprocess.run(
-        silicon_cmd, 
-        input=output_text.encode('utf-8'), 
-        capture_output=True, 
-        text=False, # バイナリとして受け取るためFalse
-        check=True
-    )
+        silicon_cmd = [
+            "silicon",
+            "--language", "sql",
+            "--output","./temp.png"
+        ]
+        output_text="{}\n{}".format(
+            elem["SQL"],
+            SQL_run_output,
+        )
 
-    background_color = (255, 170,170)
-    frame_img = np.full(
-        (SQL_video_height, SQL_video_width, 3),
-        background_color,
-        dtype=np.uint8
-    )
+        silicon_res = subprocess.run(
+            silicon_cmd, 
+            input=output_text.encode('utf-8'), 
+            capture_output=True, 
+            text=False, # バイナリとして受け取るためFalse
+            check=True
+        )
+
+        background_color = (255, 170,170)
+        frame_img = np.full(
+            (SQL_video_height, SQL_video_width, 3),
+            background_color,
+            dtype=np.uint8
+        )
+        previous_SQL=elem["SQL"]
 
     silicon_img=cv2.imread("./temp.png")
     silicon_img_h, silicon_img_w = silicon_img.shape[:2]

@@ -40,6 +40,15 @@ opencv_writer = cv2.VideoWriter(
     )
 )
 
+def my_join(s1,s2,r,arr):
+    result=""
+    for i in range(len(arr)):
+        s=s1
+        if i%r==0:
+            s+=s2
+        result+=arr[i]+(s if i!=len(arr)-1 else "")
+    
+    return result
 
 threshold = 0.7
 
@@ -95,7 +104,10 @@ while True:
                     
 
     SQL=SQL_template.format(
-        "OR".join(
+        my_join(
+        " OR ",
+        "\n",
+        2,
         ["(name = '{}' AND status = '{}')".format(
             e["name"],
             e["status"],
