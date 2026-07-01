@@ -4,6 +4,7 @@ from pathlib import Path
 import yaml
 import subprocess
 from concurrent.futures import ThreadPoolExecutor
+import copy
 
 cap = cv2.VideoCapture("video/original.mp4")
 
@@ -51,10 +52,11 @@ def my_join(s1,s2,r,arr):
     
     return result
 
-threshold = 0.7
+threshold = 0.8
 
 def detect_from_frame(args):
-    frame_i,frame=tuple(args)
+    frame_i,frame_original=tuple(args)
+    frame=frame_original.copy()
 
     show_characters=[]
 
@@ -66,7 +68,7 @@ def detect_from_frame(args):
             for template in img_templates:
                 h, w = template.shape[:2]
                 result = cv2.matchTemplate(
-                    frame,
+                    frame_original,
                     template,
                     cv2.TM_CCOEFF_NORMED
                 )
