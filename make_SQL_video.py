@@ -3,6 +3,17 @@ import cv2
 import numpy as np
 import yaml
 from pathlib import Path
+import hashlib
+import os
+
+def differential_loading_silicon_images(silicon_images):
+    for path in Path("temp_silicon_images").rglob("*"):
+        if path.is_file():
+            digest = hashlib.sha256(path.stem.encode()).digest().hex()
+            if digest not in silicon_images:
+                silicon_images[digest]=cv2.imread(path)
+
+    return silicon_images
 
 with open("SQL.yaml", "r", encoding="utf-8") as f:
     SQL = yaml.safe_load(f)
@@ -23,12 +34,18 @@ SQL_video_writer = cv2.VideoWriter(
 )
 
 previous_SQL=""
+os.makedirs(
+    "temp_silicon_images",exist_ok=True
+)
+silicon_images={}
+silicon_images=differential_loading_silicon_images(silicon_images)
 
 for frame_i,elem in enumerate(SQL["body"]):
     if frame_i%100==0:
         print(frame_i)
 
-    if previous_SQL!=elem["SQL"]:
+    digest = hashlib.sha256(elem["SQL"].encode()).digest().hex()
+    if digest not in silicon_images:        
         SQL_run_output = subprocess.run([
             "sqlite3",
             "database.db",
@@ -42,7 +59,7 @@ for frame_i,elem in enumerate(SQL["body"]):
         silicon_cmd = [
             "silicon",
             "--language", "sql",
-            "--output","./temp.png"
+            "--output","./temp_silicon_images/{}.png".format(digest)
         ]
         output_text="{}\n{}".format(
             elem["SQL"],
@@ -63,9 +80,11 @@ for frame_i,elem in enumerate(SQL["body"]):
             background_color,
             dtype=np.uint8
         )
-        previous_SQL=elem["SQL"]
 
-    silicon_img=cv2.imread("./temp.png")
+        silicon_images[digest]=cv2.imread("./temp_silicon_images/{}.png".format(digest))
+
+    silicon_img = silicon_images[digest]
+
     silicon_img_h, silicon_img_w = silicon_img.shape[:2]
 
 
