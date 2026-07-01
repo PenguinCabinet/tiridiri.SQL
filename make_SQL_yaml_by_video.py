@@ -3,6 +3,7 @@ import numpy as np
 from pathlib import Path
 import yaml
 import subprocess
+from concurrent.futures import ThreadPoolExecutor
 
 cap = cv2.VideoCapture("video/original.mp4")
 
@@ -50,16 +51,10 @@ def my_join(s1,s2,r,arr):
     
     return result
 
-threshold = 0.6
+threshold = 0.7
 
-frame_i=0
-while True:
-    ret, frame = cap.read()
-
-    if not ret:
-        break
-
-    SQL_template="SELECT * FROM characters WHERE {};"
+def detect_from_frame(args):
+    frame_i,frame=tuple(args)
 
     show_characters=[]
 
@@ -107,8 +102,6 @@ while True:
 
             if flag:
                 show_characters.append({"name":name,"status":plausible_status})
-                    
-
     SQL=SQL_template.format(
         my_join(
         " OR ",
@@ -123,19 +116,30 @@ while True:
         ["1 = 0"]
     ))
 
-    output_SQL_yaml["body"].append({
+    return {
         "frame":frame_i,
         "SQL":SQL,
-    })
+    },frame
 
+
+SQL_template="SELECT * FROM characters WHERE {};"
+frame_i=0
+frames=[]
+while True:
+    ret, frame = cap.read()
+
+    if not ret:
+        break
+    frames.append(frame)
+                    
+with ThreadPoolExecutor(max_workers=16) as executor:
+    result = list(executor.map(detect_from_frame, enumerate(frames)))
     #cv2.imshow("match", frame)
+    result.sort(key=lambda v:v[0]["frame"])
 
-    opencv_writer.write(frame)
-
-    #if cv2.waitKey(1) == ord("q"):
-    #    break
-
-    frame_i+=1
+    for (out_yaml,frame) in result:
+        opencv_writer.write(frame)
+        output_SQL_yaml["body"].append(out_yaml)
 
 print(len([e["frame"] for e in output_SQL_yaml["body"]]))
 
