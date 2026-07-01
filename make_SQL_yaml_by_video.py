@@ -50,7 +50,7 @@ def my_join(s1,s2,r,arr):
     
     return result
 
-threshold = 0.7
+threshold = 0.6
 
 frame_i=0
 while True:
@@ -64,6 +64,8 @@ while True:
     show_characters=[]
 
     for name,status_templates in character_templates.items():
+        locations_status_dict={}
+        max_result_status_dict={}
         for status,img_templates in status_templates.items():
             flag=False
             for template in img_templates:
@@ -75,8 +77,15 @@ while True:
                 )
 
                 locations = np.where(result >= threshold)
+                locations_status_dict[status]=list(zip(*locations[::-1]))[:1]
+                max_result_status_dict[status]=np.max(result)
+                
+        if len(max_result_status_dict)==0:
+            break
+        plausible_status = max(max_result_status_dict, key=max_result_status_dict.get)
 
-                for pt in list(zip(*locations[::-1]))[:1]:
+        if max_result_status_dict[plausible_status]>=threshold:
+            for pt in locations_status_dict[plausible_status]:
                     cv2.putText(
                         frame,
                         "{},{}".format(
@@ -95,12 +104,9 @@ while True:
                         (0, 255, 0),
                         2
                     )
-                if len(list(zip(*locations[::-1])))>0:
-                    flag=True
-                    break
 
             if flag:
-                show_characters.append({"name":name,"status":status})
+                show_characters.append({"name":name,"status":plausible_status})
                     
 
     SQL=SQL_template.format(
