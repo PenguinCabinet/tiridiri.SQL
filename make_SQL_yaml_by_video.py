@@ -82,6 +82,7 @@ def detect_from_frame(args):
         plausible_status = max(max_result_status_dict, key=max_result_status_dict.get)
 
         if max_result_status_dict[plausible_status]>=threshold:
+            flag=True
             for pt in locations_status_dict[plausible_status]:
                     cv2.putText(
                         frame,
