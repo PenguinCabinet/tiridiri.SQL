@@ -40,6 +40,18 @@ python make_SQL_yaml_by_video.py
 
 実行には、ffmpegが必要です。
 
+認識は輝度と輪郭を使った複数スケールのテンプレート照合を行い、その後、動画全体の
+状態遷移を最適化します。このため、フェードや圧縮ノイズで1〜数フレームだけ一致度が
+上下しても、結果が点滅しにくくなっています。調整する場合は `--threshold` だけでなく、
+状態が切り替わりにくくなる `--switch-cost` も使用できます。
+
+```
+python make_SQL_yaml_by_video.py --threshold 0.72 --switch-cost 5
+```
+
+高速に試行する際は `--no-debug-video`、サイズの異なる立ち絵も対象にする際は、たとえば
+`--scales 0.9 1.0 1.1 1.5` を指定できます。
+
 ## make_SQL_video.py
 各フレームのSQL文が書かれた[SQL.yaml](./SQL.yaml)から、SQLをターミナル画像にして、動画にまとめ、音楽と合成した[SQL.mp4](./video/SQL.mp4)を出力します。
 ```
