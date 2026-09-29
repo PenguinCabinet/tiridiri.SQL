@@ -3,7 +3,6 @@
 > 本リポジトリは[ボカロ曲「散り散り」](https://www.youtube.com/watch?v=Xn-JobZlsQo)の二次創作です     
 > ボカロ曲「散り散り」は、[いくつかの条件の下で二次利用が許可されています](https://yomitanakane.myportfolio.com/contact)。    
 > 映像を解析し、SQLで記述・それの動画を作成するという点で、本リポジトリに創意性があるという私の認識です     
-> ※本リポジトリは作業途中です。     
 
 キャラクターが表示・非表示を繰り返す[ボカロ曲「散り散り」の映像](https://www.youtube.com/watch?v=Xn-JobZlsQo)を、SQLで記述したリポジトリです。
 
