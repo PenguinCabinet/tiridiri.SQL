@@ -9,6 +9,10 @@
 
 [original.mp4](./video/original.mp4)は、加工されていないオリジナルのボカロ曲「散り散り」の映像です(ただし、ダウンロードする過程で画質は変化しているみたいです)。
 
+# 成果物の動画
+* 「散り散り.SQL」 - [Youtube](https://www.youtube.com/watch?v=yEDGXC1o6I8),[ニコニコ動画](https://www.nicovideo.jp/watch/sm46862151)
+* 「散り散りの画像認識」 - [Youtube](https://www.youtube.com/watch?v=xRp4AJ_pzlY),[ニコニコ動画](https://www.nicovideo.jp/watch/sm46862181)
+
 # 説明
 [database.db](./database.db)のcharactersテーブルに登場するキャラクターのデータが含まれています。
 
