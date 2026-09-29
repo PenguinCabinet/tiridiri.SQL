@@ -1,0 +1,208 @@
+{
+  "development": {
+    "frames": 33,
+    "character_states": 627,
+    "correct": 617,
+    "accuracy": 0.9840510366826156,
+    "exact_frames": 30,
+    "exact_frame_accuracy": 0.9090909090909091,
+    "confusion_matrix": {
+      "absent": {
+        "absent": 51,
+        "real": 0,
+        "portrait": 0
+      },
+      "real": {
+        "absent": 10,
+        "real": 256,
+        "portrait": 0
+      },
+      "portrait": {
+        "absent": 0,
+        "real": 0,
+        "portrait": 310
+      }
+    },
+    "real_recall": 0.9624060150375939,
+    "real_precision": 1.0,
+    "errors": [
+      {
+        "frame": 45,
+        "character": "studentA",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 45,
+        "character": "studentB",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 45,
+        "character": "studentC",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 45,
+        "character": "studentD",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 45,
+        "character": "teacher",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2760,
+        "character": "studentB",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2880,
+        "character": "studentA",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2880,
+        "character": "studentB",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2880,
+        "character": "studentG",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2880,
+        "character": "teacher",
+        "expected": "real",
+        "actual": "absent"
+      }
+    ]
+  },
+  "validation": {
+    "frames": 22,
+    "character_states": 418,
+    "correct": 418,
+    "accuracy": 1.0,
+    "exact_frames": 22,
+    "exact_frame_accuracy": 1.0,
+    "confusion_matrix": {
+      "absent": {
+        "absent": 29,
+        "real": 0,
+        "portrait": 0
+      },
+      "real": {
+        "absent": 0,
+        "real": 161,
+        "portrait": 0
+      },
+      "portrait": {
+        "absent": 0,
+        "real": 0,
+        "portrait": 228
+      }
+    },
+    "real_recall": 1.0,
+    "real_precision": 1.0,
+    "errors": []
+  },
+  "all": {
+    "frames": 55,
+    "character_states": 1045,
+    "correct": 1035,
+    "accuracy": 0.9904306220095693,
+    "exact_frames": 52,
+    "exact_frame_accuracy": 0.9454545454545454,
+    "confusion_matrix": {
+      "absent": {
+        "absent": 80,
+        "real": 0,
+        "portrait": 0
+      },
+      "real": {
+        "absent": 10,
+        "real": 417,
+        "portrait": 0
+      },
+      "portrait": {
+        "absent": 0,
+        "real": 0,
+        "portrait": 538
+      }
+    },
+    "real_recall": 0.9765807962529274,
+    "real_precision": 1.0,
+    "errors": [
+      {
+        "frame": 45,
+        "character": "studentA",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 45,
+        "character": "studentB",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 45,
+        "character": "studentC",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 45,
+        "character": "studentD",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 45,
+        "character": "teacher",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2760,
+        "character": "studentB",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2880,
+        "character": "studentA",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2880,
+        "character": "studentB",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2880,
+        "character": "studentG",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2880,
+        "character": "teacher",
+        "expected": "real",
+        "actual": "absent"
+      }
+    ]
+  }
+}

@@ -1,0 +1,804 @@
+{
+  "development": {
+    "frames": 33,
+    "character_states": 627,
+    "correct": 565,
+    "accuracy": 0.9011164274322169,
+    "exact_frames": 22,
+    "exact_frame_accuracy": 0.6666666666666666,
+    "confusion_matrix": {
+      "absent": {
+        "absent": 51,
+        "real": 0,
+        "portrait": 0
+      },
+      "real": {
+        "absent": 62,
+        "real": 204,
+        "portrait": 0
+      },
+      "portrait": {
+        "absent": 0,
+        "real": 0,
+        "portrait": 310
+      }
+    },
+    "real_recall": 0.7669172932330827,
+    "real_precision": 1.0,
+    "errors": [
+      {
+        "frame": 15,
+        "character": "studentA",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 15,
+        "character": "studentB",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 15,
+        "character": "studentC",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 15,
+        "character": "studentD",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 15,
+        "character": "studentE",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 30,
+        "character": "studentA",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 30,
+        "character": "studentB",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 30,
+        "character": "studentC",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 30,
+        "character": "studentD",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 30,
+        "character": "studentE",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 30,
+        "character": "studentI",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 45,
+        "character": "studentE",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 1860,
+        "character": "studentMain",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 1950,
+        "character": "studentA",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 1950,
+        "character": "studentB",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 1950,
+        "character": "studentC",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 1950,
+        "character": "studentD",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 1950,
+        "character": "studentE",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 1980,
+        "character": "studentA",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 1980,
+        "character": "studentB",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 1980,
+        "character": "studentC",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 1980,
+        "character": "studentD",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 1980,
+        "character": "studentE",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2010,
+        "character": "studentA",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2010,
+        "character": "studentB",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2010,
+        "character": "studentC",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2010,
+        "character": "studentD",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2010,
+        "character": "studentE",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2010,
+        "character": "studentO",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2040,
+        "character": "studentA",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2040,
+        "character": "studentB",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2040,
+        "character": "studentC",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2040,
+        "character": "studentD",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2040,
+        "character": "studentE",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2040,
+        "character": "studentO",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2070,
+        "character": "studentA",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2070,
+        "character": "studentB",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2070,
+        "character": "studentC",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2070,
+        "character": "studentD",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2070,
+        "character": "studentE",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2070,
+        "character": "studentN",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2070,
+        "character": "studentO",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2760,
+        "character": "studentA",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2760,
+        "character": "studentB",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2760,
+        "character": "studentE",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2760,
+        "character": "studentF",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2760,
+        "character": "studentK",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2880,
+        "character": "studentA",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2880,
+        "character": "studentB",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2880,
+        "character": "studentC",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2880,
+        "character": "studentE",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2880,
+        "character": "studentF",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2880,
+        "character": "studentG",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2880,
+        "character": "studentH",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2880,
+        "character": "studentI",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2880,
+        "character": "studentJ",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2880,
+        "character": "studentK",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2880,
+        "character": "studentL",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2880,
+        "character": "studentM",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2880,
+        "character": "studentN",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2880,
+        "character": "studentP",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2880,
+        "character": "teacher",
+        "expected": "real",
+        "actual": "absent"
+      }
+    ]
+  },
+  "all": {
+    "frames": 33,
+    "character_states": 627,
+    "correct": 565,
+    "accuracy": 0.9011164274322169,
+    "exact_frames": 22,
+    "exact_frame_accuracy": 0.6666666666666666,
+    "confusion_matrix": {
+      "absent": {
+        "absent": 51,
+        "real": 0,
+        "portrait": 0
+      },
+      "real": {
+        "absent": 62,
+        "real": 204,
+        "portrait": 0
+      },
+      "portrait": {
+        "absent": 0,
+        "real": 0,
+        "portrait": 310
+      }
+    },
+    "real_recall": 0.7669172932330827,
+    "real_precision": 1.0,
+    "errors": [
+      {
+        "frame": 15,
+        "character": "studentA",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 15,
+        "character": "studentB",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 15,
+        "character": "studentC",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 15,
+        "character": "studentD",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 15,
+        "character": "studentE",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 30,
+        "character": "studentA",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 30,
+        "character": "studentB",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 30,
+        "character": "studentC",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 30,
+        "character": "studentD",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 30,
+        "character": "studentE",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 30,
+        "character": "studentI",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 45,
+        "character": "studentE",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 1860,
+        "character": "studentMain",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 1950,
+        "character": "studentA",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 1950,
+        "character": "studentB",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 1950,
+        "character": "studentC",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 1950,
+        "character": "studentD",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 1950,
+        "character": "studentE",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 1980,
+        "character": "studentA",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 1980,
+        "character": "studentB",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 1980,
+        "character": "studentC",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 1980,
+        "character": "studentD",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 1980,
+        "character": "studentE",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2010,
+        "character": "studentA",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2010,
+        "character": "studentB",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2010,
+        "character": "studentC",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2010,
+        "character": "studentD",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2010,
+        "character": "studentE",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2010,
+        "character": "studentO",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2040,
+        "character": "studentA",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2040,
+        "character": "studentB",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2040,
+        "character": "studentC",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2040,
+        "character": "studentD",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2040,
+        "character": "studentE",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2040,
+        "character": "studentO",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2070,
+        "character": "studentA",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2070,
+        "character": "studentB",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2070,
+        "character": "studentC",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2070,
+        "character": "studentD",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2070,
+        "character": "studentE",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2070,
+        "character": "studentN",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2070,
+        "character": "studentO",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2760,
+        "character": "studentA",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2760,
+        "character": "studentB",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2760,
+        "character": "studentE",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2760,
+        "character": "studentF",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2760,
+        "character": "studentK",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2880,
+        "character": "studentA",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2880,
+        "character": "studentB",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2880,
+        "character": "studentC",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2880,
+        "character": "studentE",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2880,
+        "character": "studentF",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2880,
+        "character": "studentG",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2880,
+        "character": "studentH",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2880,
+        "character": "studentI",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2880,
+        "character": "studentJ",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2880,
+        "character": "studentK",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2880,
+        "character": "studentL",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2880,
+        "character": "studentM",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2880,
+        "character": "studentN",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2880,
+        "character": "studentP",
+        "expected": "real",
+        "actual": "absent"
+      },
+      {
+        "frame": 2880,
+        "character": "teacher",
+        "expected": "real",
+        "actual": "absent"
+      }
+    ]
+  }
+}

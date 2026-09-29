@@ -1,0 +1,58 @@
+{
+  "development": {
+    "frames": 33,
+    "character_states": 627,
+    "correct": 627,
+    "accuracy": 1.0,
+    "exact_frames": 33,
+    "exact_frame_accuracy": 1.0,
+    "confusion_matrix": {
+      "absent": {
+        "absent": 51,
+        "real": 0,
+        "portrait": 0
+      },
+      "real": {
+        "absent": 0,
+        "real": 266,
+        "portrait": 0
+      },
+      "portrait": {
+        "absent": 0,
+        "real": 0,
+        "portrait": 310
+      }
+    },
+    "real_recall": 1.0,
+    "real_precision": 1.0,
+    "errors": []
+  },
+  "all": {
+    "frames": 33,
+    "character_states": 627,
+    "correct": 627,
+    "accuracy": 1.0,
+    "exact_frames": 33,
+    "exact_frame_accuracy": 1.0,
+    "confusion_matrix": {
+      "absent": {
+        "absent": 51,
+        "real": 0,
+        "portrait": 0
+      },
+      "real": {
+        "absent": 0,
+        "real": 266,
+        "portrait": 0
+      },
+      "portrait": {
+        "absent": 0,
+        "real": 0,
+        "portrait": 310
+      }
+    },
+    "real_recall": 1.0,
+    "real_precision": 1.0,
+    "errors": []
+  }
+}

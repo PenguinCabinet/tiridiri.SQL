@@ -1,0 +1,487 @@
+{
+  "source_size": [
+    640,
+    360
+  ],
+  "reference_frames": {
+    "group": 840,
+    "opening": 0,
+    "portraits": 120,
+    "main_portrait": 3120,
+    "closed_eyes": 1920,
+    "solo": 120
+  },
+  "opening_transform": [
+    [
+      8.214296,
+      -0.107224,
+      -2285.562
+    ],
+    [
+      0.107224,
+      8.214296,
+      -1332.757
+    ]
+  ],
+  "characters": {
+    "studentA": {
+      "real": {
+        "box": [
+          179,
+          93,
+          30,
+          24
+        ],
+        "images": [
+          "studentA_real.png"
+        ]
+      },
+      "portrait": {
+        "box": [
+          21,
+          68,
+          36,
+          53
+        ],
+        "images": [
+          "studentA_portrait.png"
+        ]
+      }
+    },
+    "studentB": {
+      "real": {
+        "box": [
+          242,
+          93,
+          31,
+          24
+        ],
+        "images": [
+          "studentB_real.png"
+        ]
+      },
+      "portrait": {
+        "box": [
+          21,
+          123,
+          38,
+          52
+        ],
+        "images": [
+          "studentB_portrait.png"
+        ]
+      }
+    },
+    "studentC": {
+      "real": {
+        "box": [
+          306,
+          91,
+          28,
+          27
+        ],
+        "images": [
+          "studentC_real.png"
+        ]
+      },
+      "portrait": {
+        "box": [
+          583,
+          124,
+          35,
+          51
+        ],
+        "images": [
+          "studentC_portrait.png"
+        ]
+      }
+    },
+    "studentD": {
+      "real": {
+        "box": [
+          368,
+          89,
+          27,
+          27
+        ],
+        "images": [
+          "studentD_real.png"
+        ]
+      },
+      "portrait": {
+        "box": [
+          582,
+          68,
+          36,
+          54
+        ],
+        "images": [
+          "studentD_portrait.png"
+        ]
+      }
+    },
+    "studentE": {
+      "real": {
+        "box": [
+          429,
+          91,
+          28,
+          28
+        ],
+        "images": [
+          "studentE_real.png"
+        ]
+      },
+      "portrait": {
+        "box": [
+          583,
+          13,
+          35,
+          52
+        ],
+        "images": [
+          "studentE_portrait.png"
+        ]
+      }
+    },
+    "studentF": {
+      "real": {
+        "box": [
+          149,
+          120,
+          25,
+          25
+        ],
+        "images": [
+          "studentF_real.png"
+        ]
+      },
+      "portrait": {
+        "box": [
+          62,
+          12,
+          35,
+          55
+        ],
+        "images": [
+          "studentF_portrait.png"
+        ]
+      }
+    },
+    "studentG": {
+      "real": {
+        "box": [
+          213,
+          120,
+          25,
+          26
+        ],
+        "images": [
+          "studentG_real.png"
+        ]
+      },
+      "portrait": {
+        "box": [
+          104,
+          14,
+          33,
+          51
+        ],
+        "images": [
+          "studentG_portrait.png"
+        ]
+      }
+    },
+    "studentH": {
+      "real": {
+        "box": [
+          278,
+          120,
+          24,
+          25
+        ],
+        "images": [
+          "studentH_real.png"
+        ]
+      },
+      "portrait": {
+        "box": [
+          143,
+          14,
+          34,
+          50
+        ],
+        "images": [
+          "studentH_portrait.png"
+        ]
+      }
+    },
+    "studentI": {
+      "real": {
+        "box": [
+          338,
+          119,
+          24,
+          27
+        ],
+        "images": [
+          "studentI_real.png"
+        ]
+      },
+      "portrait": {
+        "box": [
+          465,
+          15,
+          32,
+          49
+        ],
+        "images": [
+          "studentI_portrait.png"
+        ]
+      }
+    },
+    "studentJ": {
+      "real": {
+        "box": [
+          401,
+          119,
+          23,
+          27
+        ],
+        "images": [
+          "studentJ_real.png"
+        ]
+      },
+      "portrait": {
+        "box": [
+          502,
+          15,
+          34,
+          48
+        ],
+        "images": [
+          "studentJ_portrait.png"
+        ]
+      }
+    },
+    "studentK": {
+      "real": {
+        "box": [
+          461,
+          113,
+          25,
+          27
+        ],
+        "images": [
+          "studentK_real.png"
+        ]
+      },
+      "portrait": {
+        "box": [
+          542,
+          14,
+          34,
+          49
+        ],
+        "images": [
+          "studentK_portrait.png"
+        ]
+      }
+    },
+    "studentL": {
+      "real": {
+        "box": [
+          122,
+          163,
+          22,
+          27
+        ],
+        "images": [
+          "studentL_real.png"
+        ]
+      },
+      "portrait": {
+        "box": [
+          185,
+          14,
+          31,
+          50
+        ],
+        "images": [
+          "studentL_portrait.png"
+        ]
+      }
+    },
+    "studentM": {
+      "real": {
+        "box": [
+          183,
+          162,
+          22,
+          27
+        ],
+        "images": [
+          "studentM_real.png"
+        ]
+      },
+      "portrait": {
+        "box": [
+          225,
+          16,
+          31,
+          47
+        ],
+        "images": [
+          "studentM_portrait.png"
+        ]
+      }
+    },
+    "studentMain": {
+      "real": {
+        "box": [
+          307,
+          160,
+          26,
+          29
+        ],
+        "images": [
+          "studentMain_real.png",
+          "studentMain_real_closed.png",
+          "studentMain_real_solo.png"
+        ]
+      },
+      "portrait": {
+        "box": [
+          302,
+          14,
+          35,
+          50
+        ],
+        "images": [
+          "studentMain_portrait.png"
+        ]
+      }
+    },
+    "studentN": {
+      "real": {
+        "box": [
+          245,
+          164,
+          27,
+          27
+        ],
+        "images": [
+          "studentN_real.png"
+        ]
+      },
+      "portrait": {
+        "box": [
+          263,
+          14,
+          33,
+          51
+        ],
+        "images": [
+          "studentN_portrait.png"
+        ]
+      }
+    },
+    "studentO": {
+      "real": {
+        "box": [
+          370,
+          166,
+          23,
+          26
+        ],
+        "images": [
+          "studentO_real.png"
+        ]
+      },
+      "portrait": {
+        "box": [
+          344,
+          14,
+          33,
+          49
+        ],
+        "images": [
+          "studentO_portrait.png"
+        ]
+      }
+    },
+    "studentP": {
+      "real": {
+        "box": [
+          433,
+          160,
+          24,
+          26
+        ],
+        "images": [
+          "studentP_real.png"
+        ]
+      },
+      "portrait": {
+        "box": [
+          384,
+          15,
+          30,
+          49
+        ],
+        "images": [
+          "studentP_portrait.png"
+        ]
+      }
+    },
+    "studentQ": {
+      "real": {
+        "box": [
+          496,
+          161,
+          25,
+          27
+        ],
+        "images": [
+          "studentQ_real.png"
+        ]
+      },
+      "portrait": {
+        "box": [
+          425,
+          15,
+          32,
+          48
+        ],
+        "images": [
+          "studentQ_portrait.png"
+        ]
+      }
+    },
+    "teacher": {
+      "real": {
+        "box": [
+          90,
+          98,
+          31,
+          22
+        ],
+        "images": [
+          "teacher_real.png"
+        ]
+      },
+      "portrait": {
+        "box": [
+          22,
+          12,
+          36,
+          54
+        ],
+        "images": [
+          "teacher_portrait.png"
+        ]
+      }
+    }
+  },
+  "source_sha256": "477de96f53fc93e44e2a69e4cb1afabadf284084fd4d61030303106a5f5c3df6"
+}
