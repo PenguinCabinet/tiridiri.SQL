@@ -20,8 +20,8 @@ with open("SQL.yaml", "r", encoding="utf-8") as f:
 
 cap = cv2.VideoCapture("video/original.mp4")
 
-SQL_video_width=1920
-SQL_video_height=1080
+SQL_video_width=3840
+SQL_video_height=2160
 
 SQL_video_writer = cv2.VideoWriter(
     "video/SQL_temp.mp4",
@@ -58,6 +58,7 @@ for frame_i,elem in enumerate(SQL["body"]):
 
         silicon_cmd = [
             "silicon",
+            "--font","Hack=45",
             "--language", "sql",
             "--output","./temp_silicon_images/{}.png".format(digest)
         ]
